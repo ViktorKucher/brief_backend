@@ -38,8 +38,6 @@ export class BriefController {
 
   @Delete(':id')
   remove(@Param('id') id: string) {
-    console.log(id);
-    console.log('hhjfhjfjk');
     return this.briefService.remove(id);
   }
 }
